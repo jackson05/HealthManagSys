@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container" style="background: rgb(255,255,255);">
+
+		
+		<div class="form-group ">
+			<form class="form" method="post" action="" style="margin: 50px">
+				<div class="d-block position-relative">
+					<div class="form-group">
+						<div class="col-12 border-bottom my-3 primary" >
+							<h4 style="color: #2e7354" class="font-weight-bold" >Réponse de transfusion:</h4>
+						</div>
+					</div>
+
+					
+				
+					<div class="row shadow ">
+						<div class="col-12 form-group" style="margin-top: 20px; ">
+
+								<div class=" col-6 mb-3">
+									<input type="text" name="" class="form-control shadow" placeholder="code du patient">
+								</div>
+
+							<div class=" col-6 mb-3">
+								<button type="submit" name="" class="btn  d-block w-100 position-relative bg-danger py-2 border-0 rounded-0 text-white font-weight-bold" >Scanner</button>
+							</div>
+								
+						</div>
+
+						<div class="col-12 form-group  bg-white rounded">
+							<div class="col-md-6">
+								<label for="date">Date du jour :</label>
+							</div>
+							<div class="col-md-6">
+								<input type="Date" name="date" id="date" class="form-control shadow datetimepicker-input " placeholder="Date de demande"/>
+								
+							</div>
+						</div>
+
+							<div class=" col-12 form-group">
+								<div class="col-md-6" >
+									<label for="numeroPoche">Numéros de poche :</label>
+								</div>
+								
+								<div class="col-md-6">
+									<input type="number" name="numeroPoche" id="numeroPoche" class="form-control shadow bg-white rounded" placeholder="Entrer le numéro de poche">
+								</div>
+							</div>
+						
+					</div>
+
+				
+				<div class="row form-group shadow-sm p-3 bg-white rounded">
+
+					<div class="form-group col-md-6  ">
+						<label for="quantite" class="">La quantité de sang attribuée :</label>
+						<input type="number" id="quantite" name="" class="form-control shadow p-3 bg-white rounded" placeholder="Quantité de sang attribuée en(ml)" required="required">
+					</div>
+
+
+					<div class=" form-group col-md-6">
+						<label for="type" class="my-1 mr-sm-2">La quantité de sang fournie est :  </label>
+						<select class="form-control shadow  bg-white rounded" required="required">
+							
+							<option value="GR">Total</option>
+							<option value="PLQ">Partielle</option>
+							<option value="PLM">Aucune</option>
+						</select>
+					</div>
+
+					
+				</div>
+
+				<div class="row form-group shadow-sm">
+					<div class="col-md-3">
+						<label for="poche">Nombre de Poche attribuée:</label>
+					</div>
+					<div class="form-group col-md-9 ">
+						<input type="number" id="poche" name="" class="form-control shadow bg-white rounded" placeholder="Nombre de poche" required="required">
+					</div>
+				</div>
+
+
+				</div>
+
+					
+				<div class="row form-group">
+					<input type="button" name="" class="col-12 border-0 rounded-0 btn btn-success py-2  font-weight-bold" value="Confirmer">
+				</div>
+					
+			
+			</form>
+		</div>
+	</div>
+	
+</body>
+</html>

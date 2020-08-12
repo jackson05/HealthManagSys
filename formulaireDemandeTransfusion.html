@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container" style="background: rgb(255,255,255);">
+
+		
+		<div class="form-group ">
+			<form class="form" method="post" action="" style="margin: 50px">
+				<div class="d-block position-relative">
+					<div class="form-group">
+						<div class="col-12 border-bottom my-3 primary" >
+							<h4 style="color: #2e7354" class="font-weight-bold">Demande de transfusion:</h4>
+						</div>
+					</div>
+
+					
+				
+					<div class="row shadow">
+						<div class="col-12 form-group" style="margin-top: 20px; ">
+
+								<div class=" col-6 mb-3">
+									<input type="text" name="" class="form-control shadow" placeholder="code du patient">
+								</div>
+
+							<div class=" col-6 mb-3">
+								<button type="submit" name="" class="btn  d-block w-100 position-relative bg-danger py-2 border-0 rounded-0 text-white font-weight-bold" >Scanner</button>
+							</div>
+								
+						</div>
+
+						<div class="col-12 form-group shadow-sm p-3  bg-white rounded">
+							<div class="col-md-6">
+								<label for="date">Date du jour :</label>
+							</div>
+							<div class="col-md-6">
+								<input type="Date" name="date" id="date" class="form-control shadow datetimepicker-input " placeholder="Date de demande"/>
+									
+								
+							</div>
+						</div>
+					</div>
+
+				
+				<div class="row form-group shadow-sm p-3  bg-white rounded">
+					<div class=" form-group col-md-6">
+						<label for="type" class="my-1 mr-sm-2">Type  </label>
+						<select class="form-control shadow  bg-white rounded" required="required">
+							
+							<option value="GR">Le concentré de globules rouges</option>
+							<option value="PLQ">Le concentré standard des plaquettes</option>
+							<option value="PLM">Le plasma frais congelé</option>
+						</select>
+					</div>
+
+					<div class="form-group col-md-6  ">
+						<label for="quantite" >Quantité  </label>
+						<input type="number" id="quantite" name="" class="form-control shadow  bg-white rounded" placeholder="Quantité de sang en(ml)" required="required">
+					</div>
+				</div>
+
+				<div class="row form-group shadow-sm">
+					<div class="col-md-3">
+						<label for="poche">Nombre de Poche :</label>
+					</div>
+					<div class="form-group col-md-9 ">
+						<input type="number" id="poche" name="poche" class="form-control shadow-sm bg-white rounded" placeholder="Nombre de poche" required="required">
+					</div>
+				</div>
+
+				<div class="col-12 border-bottom my-3 primary" >
+					<h4 >Motif de demande du sang :</h4>
+				</div>
+
+				<div class="row form-group shadow-sm p-3 bg-white rounded ">
+					
+					<div class=" form-group col-md-9 ">
+							
+							<select class=" form-control shadow " id="motif" >
+								<option value=""></option>
+								<option value="Anémie">Anémie</option>
+								<option value="Hémorragie post-partum">Hémorragie post-partum</option>
+								<option value="Césarienne">Césarienne</option>
+								<option value="Intervention Chirurgicale">Intervention Chirurgicale</option>
+								<option value="Trauma AVP">Trauma AVP (Traumatismes par accident de la voie publique)</option>
+								<option value="Trauma autres">Trauma autres</option>
+								
+							</select>
+					</div>
+		
+				</div>
+				
+				<div class="row form-group shadow-sm">
+					<div class="border-bottom col-12 my-3 primary">
+						<label for="textarea_motif">Autres raison/Motif :</label>
+					</div>
+
+					<div class="col-12">
+						<textarea id="textarea_motif" name="textarea_motif" class="form-control shadow p-3" rows="5"  placeholder="D'autres raison ou motif de la demande"></textarea>
+					</div>
+				</div>
+
+				</div>
+
+					
+				<div class="row  mb-3">
+					<button type="submit" name="" class="btn col-12 d-block w-100 position-relative bg-danger py-2 border-0 rounded-0 text-white font-weight-bold">Enregistrer la demande</button>
+					
+				</div>
+					
+			
+			</form>
+		</div>
+	</div>
+	
+</body>
+</html>
